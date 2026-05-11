@@ -3,7 +3,7 @@ import streamlit as st
 from snowflake.snowpark.context import get_active_session
 
 # Write directly to the app.
-st.title("Customize your Smoothy!!! :cup_with_straw: {st.__version__}")
+st.title("Customize your Smoothy orders! :cup_with_straw: {st.__version__}")
 st.write(
   """Replace this example with your own code!
   **And if you're new to Streamlit,** check
