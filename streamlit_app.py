@@ -18,7 +18,7 @@ st.write(
 #)
 #st.write("You selected:", option)
 
-from snowflake.snowpark.functions import col
+# from snowflake.snowpark.functions import col
 
 name_order = st.text_input("Name on Smootie", "")
 st.write("The current name on Smootie is:", name_order)
