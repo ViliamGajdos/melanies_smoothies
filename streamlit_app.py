@@ -29,23 +29,22 @@ st.write("The current name on Smootie is:", name_order)
 
 # ingredients_list = st.multiselect('choose from the list:', my_dataframe)
 
-if ingredients_list:
-   # st.write(ingredients_list)
-   # st.text(ingredients_list)
+# if ingredients_list:
+#   # st.write(ingredients_list)
+#   # st.text(ingredients_list)
 
-    ingredients_string = ''
-    for fruit_chosen in ingredients_list:
-        ingredients_string += fruit_chosen + ' '
+#    ingredients_string = ''
+#    for fruit_chosen in ingredients_list:
+#        ingredients_string += fruit_chosen + ' '
     
-    st.write(ingredients_string)
+#   st.write(ingredients_string)
 
-    my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order)
-                    values ('""" + ingredients_string + """','""" + name_order + """')"""
-    st.write(my_insert_stmt)
-    #st.stop()
+#    my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order)
+#                    values ('""" + ingredients_string + """','""" + name_order + """')"""
+#    st.write(my_insert_stmt)
+#    #st.stop()
     
-    time_to_insert = st.button('Insert Otem')
-    # if time_to_insert:
-    #    session.sql(my_insert_stmt).collect()
-    #    st.success('Your Smoothie is ordered!', icon="✅")
-    
+#    time_to_insert = st.button('Insert Otem')
+#    # if time_to_insert:
+#    #    session.sql(my_insert_stmt).collect()
+     #   st.success('Your Smoothie is ordered!', icon="✅")
