@@ -13,7 +13,7 @@ st.write(
 )
 
 # streamlit_app.py
-conn = st.connection("snowflake")
+#conn = st.connection("snowflake")
 
 #option = st.selectbox(
 #    "How would you like to be contacted?",
