@@ -23,11 +23,11 @@ st.write(
 name_order = st.text_input("Name on Smootie", "")
 st.write("The current name on Smootie is:", name_order)
 
-session = get_active_session()
-my_dataframe = session.table("smoothies.public.fruit_options").select (col('FRUIT_NAME'))
-#st.dataframe(data=my_dataframe, use_container_width=True)
+# session = get_active_session()
+# my_dataframe = session.table("smoothies.public.fruit_options").select (col('FRUIT_NAME'))
+# #st.dataframe(data=my_dataframe, use_container_width=True)
 
-ingredients_list = st.multiselect('choose from the list:', my_dataframe)
+# ingredients_list = st.multiselect('choose from the list:', my_dataframe)
 
 if ingredients_list:
    # st.write(ingredients_list)
@@ -45,7 +45,7 @@ if ingredients_list:
     #st.stop()
     
     time_to_insert = st.button('Insert Otem')
-    if time_to_insert:
-        session.sql(my_insert_stmt).collect()
-        st.success('Your Smoothie is ordered!', icon="✅")
+    # if time_to_insert:
+    #    session.sql(my_insert_stmt).collect()
+    #    st.success('Your Smoothie is ordered!', icon="✅")
     
